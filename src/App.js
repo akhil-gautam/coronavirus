@@ -18,7 +18,9 @@ function App() {
   return (
     <div className="mainContainer">
       <div>
-        <div className="header">CoronaVIRUS</div>
+        <div className="header">
+          <div className="header-message">Heard a Rumor? Get it confirmed <a href = "https://docs.google.com/forms/d/1JK4A2QRSA7Jz829_krw7V1Je43eSRjb8TCqw7CweABU/viewform?edit_requested=true" target="blank">here</a>.</div>
+          CoronaVIRUS</div>
         <div className="totalRecord">
           {Object.keys(total).length > 0 && <Total total={total} />}
         </div>
@@ -67,7 +69,7 @@ const Total = ({
           </span>
         </div>
       </div>
-      <div className="updatedAt">Last updated at: {lastupdatedtime}</div>
+      <div className="updatedAt">Last updated at: {lastupdatedtime}. Change updated at Midnight.</div>
     </>
   );
 };
@@ -86,6 +88,8 @@ class StateWise extends React.Component {
               <span>Confirmed: {s.confirmed}</span>
 
               <span>Active: {s.active}</span>
+
+              <span>Recovered: {s.recovered}</span>
 
               <span>Death: {s.deaths}</span>
             </div>
