@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { MdTrendingUp } from "react-icons/md";
+import { MdTrendingUp } from "react-icons/md";
 
 function App() {
   const [data, setData] = useState([]);
@@ -42,34 +42,34 @@ const Total = ({
       <div>
         <div className="listData">
           <span>Confirmed Cases: {confirmed}</span>
-          {/* <span className="riseData">
+          <span className="riseData">
             <MdTrendingUp />
             {delta.confirmed}
-          </span> */}
+          </span>
         </div>
         <div className="listData">
           <span>Active Cases: {active}</span>
-          {/* <span className="riseData">
+          <span className="riseData">
             <MdTrendingUp />
             {delta.active}
-          </span> */}
+          </span>
         </div>
         <div className="listData">
           <span>Deaths: {deaths}</span>
-          {/* <span className="riseData">
+          <span className="riseData">
             <MdTrendingUp />
             {delta.deaths}
-          </span> */}
+          </span>
         </div>
         <div className="listData">
           <span>Recovered: {recovered}</span>
-          {/* <span className="riseData">
+          <span className="riseData">
             <MdTrendingUp />
             {delta.recovered}
-          </span> */}
+          </span>
         </div>
       </div>
-      <div className="updatedAt">Last updated at: {lastupdatedtime}</div>
+      <div className="updatedAt">Last updated at: {lastupdatedtime}. Change updated at Midnight.</div>
     </>
   );
 };
