@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  height: 4rem;
+  height: 6rem;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 800;
@@ -17,6 +17,17 @@ body {
   text-transform: uppercase;
   color: red;
   letter-spacing: 3px;
+}
+
+.header-message{
+  height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  text-transform: none;
+  color: black;
+  letter-spacing: normal;
 }
 
 .totalRecord {
